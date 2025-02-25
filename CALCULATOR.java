@@ -12,7 +12,15 @@ public class CALCULATOR
         float variableSecond = scanner.nextFloat();
         System.out.println("Выберите действие под номером 1 + 2 - 3 * 4 /");
         int actionNumber = scanner.nextInt();
+        switch (actionNumber)
+        {
         
+            case 1:
+            case 2:
+            case 3:
+            case 4:
+            default: System.out.println("Ошибка ввода данных");
+        }
 
     }
 }
