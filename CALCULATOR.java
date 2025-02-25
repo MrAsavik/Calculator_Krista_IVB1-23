@@ -16,25 +16,25 @@ public class CALCULATOR
         System.out.println(mathematicalOperation );
         switch (mathematicalOperation)
         {
-        
-            case "+": 
-                System.out.print(variableFirst + variableSecond);
-                break;
-            // case 2:
-            //     System.out.print(variableFirst - variableSecond);
-            //     break;
-            // case 3:
-            //     System.out.print(variableFirst * variableSecond);
-            //     break;
-            // case 4:
-            //     if (variableSecond != 0)
-            //     {
-            //         System.out.print(variableFirst / variableSecond);
-            //     }
-            //     else System.out.println("Нельзя делить на ноль");
-                
-            //     break;
-            default: System.out.println("Ошибка ввода данных");
+                case "+":
+                    System.out.println("Результат: " + (variableFirst + variableSecond));
+                    break;
+                case "-":
+                    System.out.println("Результат: " + (variableFirst - variableSecond));
+                    break;
+                case "*":
+                    System.out.println("Результат: " + (variableFirst * variableSecond));
+                    break;
+                case "/":
+                    if (variableSecond != 0) {
+                        System.out.println("Результат: " + (variableFirst / variableSecond));
+                    } else {
+                        System.out.println("Ошибка: Нельзя делить на ноль!");
+                    }
+                    break;
+                default:
+                    System.out.println("Ошибка ввода: неверный оператор! Используйте +, -, *, /");
+            
         }
 
     }
