@@ -11,6 +11,7 @@ public class CALCULATOR
         System.out.print("Введите второе чило: ");
         float variableSecond = scanner.nextFloat();
         System.out.println("Выберите действие под номером 1 + 2 - 3 * 4 /");
+        int actionNumber = scanner.nextInt();
         
 
     }
