@@ -5,12 +5,10 @@ public class CALCULATOR
     public static void main(String[] args)
     {
         Scanner scanner = new Scanner(System.in);
-        System.out.print("Введите первое чило: ");
-        float variableFirst = scanner.nextFloat();
-        System.out.print("Введите второе чило: ");
-        float variableSecond = scanner.nextFloat();
-        System.out.println("Выберите действие под номером 1 + 2 - 3 * 4 /");
-        int actionNumber = scanner.nextInt();
+        System.out.print("Введите выражение: ");
+        String str = scanner.nextLine();
+        String[] parts = str.split(" ");
+        
         switch (actionNumber)
         {
         
